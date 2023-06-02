@@ -13,6 +13,6 @@ steps:
 - task: AzureStaticWebApp@0
   inputs:
     app_location: '/'
-    azure_static_web_apps_api_token: 'd4270fc9e1e2d6b88f1bf72b16cc4a4a7c5fa67351161d94d4384c91665564673-01f1d0f2-7927-4fb6-83b9-36b695d941f0003239646'
+    azure_static_web_apps_api_token: $(apikey)
   env:
     VERCEL_URL: "https://app-dir.vercel.app"
